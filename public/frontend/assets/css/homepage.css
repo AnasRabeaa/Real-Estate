@@ -1,0 +1,243 @@
+
+/*=============== POPULAR ===============*/
+
+.popular__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.1rem;
+    text-align: center;
+    color: #23262f;
+}
+
+.popular__description {
+    font-size: var(--small-font-size);
+    text-align: center;
+    display: block;
+}
+
+.popular__card:hover {
+    box-shadow: 0 12px 40px hsla(223, 14%, 52%, 0.1);
+}
+
+/* property style */
+.property__container {
+    column-gap: 0.5rem;
+    row-gap: 2rem;
+}
+
+.property__card {
+    width: 290px;
+    background-color: var(--container-color);
+    padding: 0.5rem 0.5rem 1.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+
+.property__images {
+    position: relative;
+}
+
+.property__img {
+    position: relative;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property__data {
+    padding: 0 1rem 0 0.5rem;
+}
+
+.property__price {
+    font-size: var(--h2-font-size);
+    color: #2388b4;
+    margin-bottom: 0.25rem;
+}
+
+.property__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.75rem;
+    color: #2388b4;
+}
+
+.property__description {
+    font-size: var(--small-font-size);
+}
+
+.property__card {
+    box-shadow: 0 3px 24px hsla(225, 66%, 45%, 0.1);
+}
+
+.property__card a {
+    color: var(--text-color);
+}
+
+.property__card:hover {
+    box-shadow: 8px 8px 0 hsla(228, 66%, 45%, 0.25);
+}
+
+.property__badge {
+    background: linear-gradient(101deg, #9ed1e7, #2388b4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    border-radius: 0 1rem 0 1rem;
+    padding: 0.5rem 1.75rem;
+}
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* display: block; */
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: flex;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.customer-logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 320px) {
+
+    .popular__card {
+        width: 230px;
+        padding: 0.5rem 0.5rem 0.75rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    .popular__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .popular__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .popular__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .popular__card {
+        width: 230px;
+        padding: 1rem 1rem 1.5rem;
+    }
+
+    .popular__data {
+        padding: 0 0.25rem 0 0.75rem;
+    }
+
+    .property__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
