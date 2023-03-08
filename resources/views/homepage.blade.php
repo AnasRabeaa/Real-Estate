@@ -377,12 +377,6 @@
           </div>
 
 
-          @if(session()->has('message'))
-                        <div class="alert" style="position: relative;text-align: center;background-color: lightgreen;padding: 1rem;margin-bottom: .5rem;color: green;border-radius: .25rem;">
-                            {{ session()->get('message') }}
-                            <i id="hide" style="font-size: 1.5rem;cursor: pointer;position: absolute;top: .25rem;right: .25rem;" class='bx bx-x'></i>
-                        </div>
-                    @endif
 
           <div class="row">
               <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.900280803161!2d30.97961331511492!3d30.039718581883974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb81bafceed147aae!2zMzDCsDAyJzIzLjAiTiAzMMKwNTgnNTQuNSJF!5e0!3m2!1sen!2seg!4v1678120565008!5m2!1sen!2seg" allowfullscreen="" loading="lazy"></iframe>

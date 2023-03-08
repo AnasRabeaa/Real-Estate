@@ -37,7 +37,7 @@
               <!-- /.card-header -->
               <!-- form start -->
               <form method="post" action="{{ route('admin.properties.store')}}" enctype="multipart/form-data">
-                @csrf 
+                @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="name">Name</label>

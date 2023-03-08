@@ -101,7 +101,7 @@
               <a href="https://www.instagram.com/damcon_cons/" class="footer__social-link">
                 <i class="bx bxl-instagram-alt"></i>
               </a>
-              <a href="" class="footer__social-link">
+              <!-- <a href="" class="footer__social-link">
                 <i class="bx bxl-youtube"></i>
               </a>
               <a href="" class="footer__social-link">
@@ -112,7 +112,7 @@
               </a>
               <a href="" class="footer__social-link">
                 <i class="bx bxl-twitter"></i>
-              </a>
+              </a> -->
             </ul>
           </div>
         </div>

@@ -52,12 +52,12 @@
                               <a href="{{ Storage::url($gallery->photo)}}">
                                 <img src="{{ Storage::url($gallery->photo)}}" width="200" alt="">
                               </a>
-                            </td>  
-                            
+                            </td>
+
                             <td>
                                 <a href="{{ route('admin.properties.galleries.edit',[$property->id,$gallery->id]) }}" class="btn btn-info">edit</a>
                                 <form onclick="return confirm('are you sure');" class="d-inline-block" action="{{ route('admin.properties.galleries.destroy', [$property->id,$gallery->id])}}" method="post">
-                                    @csrf 
+                                    @csrf
                                     @method('delete')
                                     <button class="btn btn-danger">Delete</button>
                                 </form>
@@ -80,7 +80,7 @@
               <!-- /.card-header -->
               <!-- form start -->
               <form method="post" action="{{ route('admin.properties.update', $property->id)}}">
-                @csrf 
+                @csrf
                 @method('put')
                 <div class="card-body">
                    <div class="form-group">
