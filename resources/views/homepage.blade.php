@@ -39,22 +39,22 @@
               </a>
             </li>
 
-            <li class="nav__item">
+            <!-- <li class="nav__item">
               <a href="{{ route('login') }}" class="nav__link">
                 <i class='bx bx-log-in' ></i>
                 <span></span>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
 
         <!-- Theme change button -->
         <i class="bx bx-moon change-theme" id="theme-button"></i>
 
-        <a href="{{ route('login') }}" class="button nav__button">
+        <!-- <a href="{{ route('login') }}" class="button nav__button">
           <i class='bx bx-log-in' ></i>
           Login
-        </a>
+        </a> -->
       </nav>
     </header>
 @endsection
